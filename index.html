@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Atvidade 1</title>
+    </head>
+<body>
+     <header>
+            <h1>Cadastro de usúario</h1>
+     </header>
+        <main>
+            <form>
+                <section>
+                    <h2>Dados de usúario</h2>
+                    <label for="input_nome">Nome:</label>
+                    <input type="text" id=" input_nome" placeholder="Ex :Joao" required >
+
+                        <br>
+
+                    <label for="input_sobrenome">Sobrenome:</label>
+                    <input type="text" id="input_sobrenome" placeholder="Ex :Silva " required >
+                
+                        <br>
+                
+                    <label for="input_data">Data de nascimento:</label>
+                    <input type="date" id="input_data" placeholder="Digite sua data de nascimento aqui..." required >
+                    
+                        <br>
+
+                    <label for="input_cpf">Cpf:</label>
+                    <input type="text" id="input_cpf" placeholder="Ex :000.000.000-00" required >
+
+                        <br>
+
+                    <label for="input_telefone">Rg:</label>
+                    <input type="text" id="input_rg" placeholder="Ex:000.000.000" required >
+                    
+                        <br>
+
+                    <label for="input_telefone">Telefone:</label>
+                    <input type="tel" id="input_telefone" placeholder="Ex:00-000000000" required >
+                <section>
+                <section>
+                    <h2>Endereço</h2>
+                    <label for="input_cep">Cep:</label>
+                    <input type="text" id="input_cep" placeholder="00000-00" required >
+
+                    <br>
+
+                    <label for="input_rua">Rua:</label>
+                    <input type="text" id="input_rua" placeholder="Digite o nome da sua rua.." required >
+
+                    <br>
+
+                    <label for="input_numero">Número:</label>
+                    <input type="text" id="input_numero" placeholder="Ex:000" required >
+
+                    <br>
+
+                    <label for="input_complemento">Complemento:</label>
+                    <input type="text" id="input_complemento" placeholder="Digite o complemento.." required >
+                </section>    
+                <section>
+                    <h2> Configuraçoes da conta </h2>
+                    <label for="select_conta">Tipo de conta</label>
+                    <select name="select_conta" id="tipo_conta">
+                    <option value="" selected disabled>Selecione uma opção </option>
+                    <option value="básico">Básico< /option>
+                    <option value="prime"> Prime </option>
+                    <option value="premium">  Premium </option>
+                    </select>
+                </section>
+                <section>
+                    <h2>Tempo de contrato</h2>
+                    <label for="select_contrato">Tempo de contrato</label>
+                    <select name="select_contrato" id="tempo_contrato">
+                     <option selected disabled value="">Selecione uma opção</option>   
+                     <option value="6meses">6 meses</option>
+                     <option value="1ano"> 1 ano </option>
+                     <option value="2anos"> 2 anos </option> 
+                     <option value="4anos"> 4 anos </option> 
+                    </select>
+
+                    <br>
+
+                 <label for="select_pagamento">Forma de pagamento </label>
+                 <select name="select_pagamento" id="forma_pagamento">
+                 <option selected disabled value="">Selecione uma forma de pagamento </option>   
+                 <option value="avista"> A vista</option>
+                 <option value="parcelado"> Parcelado </option>
+                 <option value="6x">6 vezes </option>
+                 <option value="mensal"> Mensal </option>
+                </select> 
+                
+                    <br>
+
+                    <h2>Senha</h2> 
+                    <label for="input_passaword">Senha</label>
+                    <input type="password" id="input_passaword" placeholder="Digite sua senha.." required >
+
+                </section>
+                <section>
+                    <h2>Pesquisa</h2>
+                <ol>
+                    <li>
+                        <label for="input_pesquisa1">Como você avalia sua facilidade de aprendizado?</label>
+                        <input type="number"id="input_pesquisa1" min="1" max="5">
+                    </li>
+
+                    <li>
+                        <label for="input_pesquisa2">Como você avalia a qualidade do seu ensino até aqui?</label>
+                        <input type="number" id="input_pesquisa2" min="1" max="5">
+
+                    </li>
+                    <li>
+                        <label for="input_pesquisa3">Qual a chance de recomendar o curso para um amigo?</label>
+                        <input type="range" id="input_pesquisa3" min="3">
+                    </li>
+                </ol>
+                </section>
+                <input type="submit" name="Enviar">
+             </form>
+             <textarea name="" id="123"></textarea>      
+        </main>
+    </body>
+</html>
